@@ -25,3 +25,12 @@ pavucontrol
 #river
 river
 xdg-desktop-portal-wlr
+
+#dev
+node
+npm
+neovim
+code
+
+#utilities
+unzip
