@@ -19,6 +19,9 @@ hypridle
 hyprpicker
 cliphist
 
+#audio
+pavucontrol
+
 #river
 river
 xdg-desktop-portal-wlr
