@@ -2,10 +2,10 @@
   {
     "battery": {
       "design-capacity": false,
-      "format": "<span foreground='#e6c36c' size='13000'>󰁹</span>\n{capacity}",
-      "format-charging": "<span foreground='#e6c36c' size='13000'>󰁹<span foreground='#2CFF05'><sup></sup></span></span>\n{capacity}",
+      "format": "<span foreground='#91cef5' size='13000'>󰁹</span>\n{capacity}",
+      "format-charging": "<span foreground='#91cef5' size='13000'>󰁹<span foreground='#2CFF05'><sup></sup></span></span>\n{capacity}",
       "format-full": "100",
-      "format-plugged": "<span foreground='#314d32' size='13000'>󰁹</span>\n{capacity}",
+      "format-plugged": "<span foreground='#cbc1e9' size='13000'>󰁹</span>\n{capacity}",
       "full-at": 100,
       "states": {
         "critical": 10,
@@ -16,7 +16,7 @@
     },
     "bluetooth": {
       "format": "",
-      "format-connected": "󰂯<span foreground='#ffb4ab'><sup></sup></span>",
+      "format-connected": "󰂯<span foreground='#93000a'><sup></sup></span>",
       "format-disabled": "󰂯",
       "on-click": "blueberry",
       "tooltip": true,
@@ -25,12 +25,12 @@
       "tooltip-format-enumerate-connected": "󰂯 {device_alias} 󰁹{device_battery_percentage}"
     },
     "clock": {
-      "format": "<span foreground='#e6c36c'></span>\n{:%H\n%M}",
+      "format": "<span foreground='#91cef5'></span>\n{:%H\n%M}",
       "interval": 1,
       "tooltip": false
     },
     "cpu": {
-      "format": "<span foreground='#e6c36c'></span>\n{usage}",
+      "format": "<span foreground='#91cef5'></span>\n{usage}",
       "format-alt-click": "click",
       "interval": 1,
       "min-length": 5
@@ -51,13 +51,13 @@
       "format": "{icon}",
       "format-icons": {
         "dnd-inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='#ffb4ab'><sup></sup></span>",
+        "dnd-inhibited-notification": "<span foreground='#93000a'><sup></sup></span>",
         "dnd-none": "",
-        "dnd-notification": "<span foreground='#ffb4ab'><sup></sup></span>",
+        "dnd-notification": "<span foreground='#93000a'><sup></sup></span>",
         "inhibited-none": "",
-        "inhibited-notification": "<span foreground='#ffb4ab'><sup></sup></span>",
+        "inhibited-notification": "<span foreground='#93000a'><sup></sup></span>",
         "none": "",
-        "notification": "<span foreground='#ffb4ab'><sup></sup></span>"
+        "notification": "<span foreground='#93000a'><sup></sup></span>"
       },
       "on-click": "sleep 0.1 && swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
@@ -65,7 +65,7 @@
       "tooltip": false
     },
     "disk": {
-      "format": "<span foreground='#e6c36c'></span>\n{percentage_used}",
+      "format": "<span foreground='#91cef5'></span>\n{percentage_used}",
       "interval": 30,
       "path": "/",
       "tooltip": false
@@ -96,7 +96,7 @@
     "idle_inhibitor": {
       "format": "{icon}",
       "format-icons": {
-        "activated": "󰛊<span foreground='#ffb4ab'><sup></sup></span>",
+        "activated": "󰛊<span foreground='#93000a'><sup></sup></span>",
         "deactivated": "󰛊"
       }
     },
@@ -107,7 +107,7 @@
     "margin-right": 0,
     "margin-top": 5,
     "memory": {
-      "format": "<span foreground='#e6c36c'></span>\n{percentage}",
+      "format": "<span foreground='#91cef5'></span>\n{percentage}",
       "interval": 10,
       "tooltip": false
     },
@@ -152,8 +152,8 @@
     "spacing": 3,
     "temperature": {
       "critical-threshold": 82,
-      "format": "<span foreground='#e6c36c'></span>\n{temperatureC}",
-      "format-critical": "<span foreground='#ffb4ab'></span>\n{temperatureC}",
+      "format": "<span foreground='#91cef5'></span>\n{temperatureC}",
+      "format-critical": "<span foreground='#93000a'></span>\n{temperatureC}",
       "hwmon-path": [
         "/sys/class/hwmon/hwmon1/temp1_input",
         "/sys/class/thermal/thermal_zone0/temp"
@@ -167,3 +167,4 @@
     "width": 15
   }
 ]
+

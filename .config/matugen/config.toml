@@ -30,13 +30,18 @@ input_path = './templates/matugen-hypr-colors.conf'
 output_path = '~/.config/hypr/hyprland/colors.conf'
 
 [templates.waybar]
+input_path = '~/.config/matugen/templates/matugen-waybar'
+output_path = '~/.config/waybar/config'
+# post_hook = 'pkill -sigusr2 waybar'
+
+[templates.waybar-css]
 input_path = '~/.config/matugen/templates/matugen-waybar.css'
 output_path = '~/.config/waybar/colors.css'
 post_hook = 'pkill -sigusr2 waybar'
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/matugen-rofi-colors.rasi'
-output_path = '~/.config/rofi/shared/colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
 
 [templates.nvim]
 input_path = '~/.config/matugen/templates/matugen-nvim-colors.lua'
@@ -44,7 +49,7 @@ output_path = '~/.local/state/nvim/colors.lua'
 
 [templates.swaync]
 input_path = '~/.config/matugen/templates/matugen-swaync-style.css'
-output_path = '~/.config/swaync/style.css'
+output_path = '~/.config/swaync/colors.css'
 post_hook = 'pkill -sigusr2 swaync'
 
 [templates.tmux]

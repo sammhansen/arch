@@ -1,66 +1,104 @@
-# Don't print a new line at the start of the prompt
 add_newline = true
+format = "$os $hostname $username $directory\n$character"
 
-# format = """
-# $cmd_duration$username$hostname $directory $git_branch
-# $character
-# """
-format = """
-$hostname $username $directory
-$character
-"""
+[battery]
+disabled = true
+
+[c]
+format = "[$symbol ](blue)"
+symbol = " "
 
 [character]
-success_symbol = "[ ](bold fg:{{colors.primary.default.hex}})"
-error_symbol = "[ 󰅙](bold fg:{{colors.error.default.hex}})"
+error_symbol = "[ 󰅙 ](bold fg:{{ colors.error.default.hex }})"
+success_symbol = "[  ](bold fg:{{ colors.primary.default.hex }})"
 
-[package]
-disabled = true
-
-[hostname]
-ssh_only = true
-format = "[•$hostname](bg:{{colors.secondary_container.default.hex}} bold fg:{{colors.on_secondary_container.default.hex}})[](bold fg:{{colors.primary_container.default.hex}})"
-trim_at = ".companyname.com"
-disabled = false
-
-[line_break]
-disabled = false
-
-[memory_usage]
-disabled = true
-threshold = -1
-symbol = " "
-style = "bold dimmed {{colors.surface_variant.default.hex}}"
-
-[time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
-time_format = "%T"
-
-[username]
-style_user = "bg:default fg:{{ colors.primary.default.hex }}"
-style_root = "bg:default fg:{{colors.error.default.hex}}"
-format = "([$user]($style))"
-disabled = false
-show_always = true
+[container]
+format = "[$symbol ](yellow dimmed)"
+symbol = " 󰏖"
 
 [directory]
+format = "([ @ ](bg:default fg:{{ colors.error_container.default.hex }}) [$path ]($style))"
 home_symbol = "  "
 read_only = "  "
 style = "bg:default fg:default"
 truncation_length = 6
 truncation_symbol = "••/"
-format = '([ @ ](bg:default fg:{{ colors.error_container.default.hex }}) [$path ]($style))'
 
 [directory.substitutions]
-"Desktop" = "  "
-"Documents" = "  "
-"Downloads" = "  "
-"Music" = " 󰎈 "
-"Pictures" = "  "
-"Videos" = "  "
+Desktop = "  "
+Documents = "  "
+Downloads = "  "
+GitHub = ""
+Music = " 󰎈 "
+Pictures = "  "
+Videos = "  "
 
-[cmd_duration]
-min_time = 0
-format = '[ •• ](bold fg:{{colors.secondary.default.hex}})[ $duration](bold bg:transparent fg:{{colors.on_secondary.default.hex}})'
+[docker_context]
+format = "[$symbol ](blue)"
+symbol = " "
+
+[golang]
+format = "[$symbol ](blue)"
+symbol = ""
+
+[hostname]
+disabled = false
+format = "[•$hostname](bg:default fg:{{ colors.on_secondary_container.default.hex }})"
+ssh_only = true
+trim_at = ".companyname.com"
+
+[java]
+format = "[$symbol ](red)"
+symbol = " "
+
+[lua]
+format = "[$symbol ](blue)"
+symbol = "󰢱 "
+
+[nix_shell]
+format = "via [$symbol](blue)"
+symbol = " "
+
+[nodejs]
+format = "[$symbol ](yellow)"
+symbol = " "
+
+[os]
+format = "[$symbol]($style)"
+style = "bold white"
+
+[os.symbols]
+Alpine = ""
+Arch = ""
+Artix = ""
+CentOS = ""
+Debian = ""
+EndeavourOS = ""
+Fedora = ""
+Gentoo = ""
+Kali = "󰠥"
+Linux = ""
+Macos = "󰀵"
+Manjaro = ""
+Mint = ""
+NixOS = ""
+Raspbian = ""
+SUSE = ""
+Ubuntu = ""
+Windows = ""
+openSUSE = ""
+
+[python]
+format = "[$symbol ](yellow)"
+symbol = ""
+
+[rust]
+format = "[$symbol ](red)"
+symbol = ""
+
+[username]
+format = "[   $user]($style) "
+show_always = true
+style_root = "bg:default fg:{{ colors.error.default.hex }}"
+style_user = "bg:default fg:{{ colors.primary.default.hex }}"
 

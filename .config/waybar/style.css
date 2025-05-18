@@ -1,14 +1,4 @@
-@define-color primary #e6c36c;
-@define-color primary_container #594400;
-@define-color on_primary_container #ffdf95;
-@define-color secondary_container #51452a;
-@define-color on_secondary_container #f3e1bb;
-@define-color background #16130b;
-@define-color on_background #eae1d4;
-@define-color outline_variant #4c4639;
-@define-color error #ffb4ab;
-@define-color error_container #93000a;
-@define-color on_error_container #ffdad6;
+@import "colors.css";
 
 * {
   font-family: "SpaceMono Nerd Font";
@@ -52,6 +42,14 @@ tooltip label {
   color: @on_background;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.icons {
+  color: @primary;
+}
+
+.dot-active {
+  color: @primary;
 }
 
 #custom-swaync {

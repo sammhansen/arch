@@ -8,16 +8,22 @@ eza
 zoxide
 
 kdeconnect
+docker
 
 #power
 power-profiles-daemon
 
 #hypr
+uwsm
 hyprsunset
 hyprlock
 hypridle
 hyprpicker
 cliphist
+brightnessctl
+kanshi
+adw-gtk-theme
+papirus-icon-theme
 
 #audio
 pavucontrol
@@ -34,3 +40,8 @@ code
 
 #utilities
 unzip
+
+#virtualization
+qemu-full
+virt-manager
+virt-viewer

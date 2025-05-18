@@ -35,6 +35,8 @@ services(){
   services=(
     bluetooth.service 
     warp-svc.service
+    docker.service
+    libvirtd.service
   )
 
   for service in "$services[@]"; do 

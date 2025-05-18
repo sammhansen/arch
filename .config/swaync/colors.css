@@ -1,0 +1,18 @@
+@define-color bg                          rgba(15, 20, 23, 1.0);
+@define-color on-bg                       rgba(223, 227, 231, 1.0);
+@define-color bg-alt                      rgba(53, 58, 61, 1.0);
+@define-color on-bg-alt                   rgba(193, 199, 206, 1.0);
+@define-color selected                    rgba(145, 206, 245, 1.0);
+@define-color hover                       rgba(145, 206, 245, 0.4);
+@define-color urgent                      rgba(147, 0, 10, 1.0);
+@define-color bg-primary                  rgba(0, 76, 106, 1.0);
+@define-color on-bg-primary               rgba(197, 231, 255, 1.0);
+@define-color bg-secondary                rgba(55, 73, 85, 1.0);
+@define-color on-bg-secondary             rgba(210, 229, 244, 1.0);
+@define-color bg-surface                  rgba(28, 32, 36, 1.0);
+@define-color on-bg-surface               rgba(223, 227, 231, 1.0);
+@define-color bg-surface-highest          rgba(49, 53, 57, 1.0);
+@define-color on-bg-surface-highest       rgba(223, 227, 231, 1.0);
+@define-color tertiary                    rgba(203, 193, 233, 1.0);
+@define-color on-bg-tertiary              rgba(231, 222, 255, 1.0);
+

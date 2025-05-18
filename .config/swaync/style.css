@@ -1,2 +1,3 @@
-@import "control-center.css";
-@import "notifications.css";
+@import "colors.css";
+@import "modules/control-center.css";
+@import "modules/notifications.css";
